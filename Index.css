@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header{
+    background: linear-gradient(black,rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+}
+#Barra_navegación{
+    background-image: url("https://hbomax-images.warnermediacdn.com/images/GXdbR_gOXWJuAuwEAACVH/tileburnedin?size=1280x720&partner=hbomaxcom&v=6a409f09891f75549fdb8d07dc969b63&host=art-gallery.api.hbo.com&language=es-419&w=1280");
+    background-position:bottom;
+    width: 100%;
+    height:630px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    float: left;
+    margin-top: 15px;
+}
+#Barra_navegación ul{
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 50px;
+}
+#Barra_navegación li{
+    display: inline;
+    text-align: center;
+    margin: 10px 20px 0 0;
+    float: left;
+}
+#Barra_navegación li a{
+    display: block;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:larger;
+    color: white;
+    text-decoration: none;
+}
+#Barra_navegación li a:hover{
+    color:darkred
+}
+#Icono_lista{
+    width: 30px;
+    height: 30px;
+    margin-top: -8px;
+}
+#Icono_usuario{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -8px;
+    padding-left: 1050px;
+}
+#Texto{
+    padding: 10px;
+    width: 480px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 380px;
+}
+#Texto h1{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white
+}
+#Texto h4{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin-top: -23px;
+    margin-left: 120px;
+}
+#Texto p{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+#Play{
+    width: 80px;
+    height: 35px;
+    background-color: #000000a4;
+    border:0;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:medium;
+    color: white;
+}
+#Play:hover{
+    background-color: #dadada64;
+}
+#Icono_play{
+    width: 30px;
+    height: 30px;
+    margin-left: -165px;
+    margin-bottom: -10px;
+}
+#Save{
+    width: 80px;
+    height: 35px;
+    background-color: #000000a4;
+    border:0;
+    border-radius: 10px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:medium;
+    color: white;
+    padding-right: 30px;
+}
+#Save:hover{
+    background-color: #dadada64;
+}
+#Icono_guardar{
+    width: 30px;
+    height: 30px;
+    margin-left: 95px;
+    margin-bottom: -10px;
+}
+#Botones h4{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    margin-left: 180px;
+    margin-top: -25px;
+}
+#Botones a{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:medium;
+    color: white;
+    text-decoration: none;
+}
+#Botones a:hover{
+    color:darkred
+}
+#Recomendados{
+    background-color:rgb(23, 23, 23);
+    width: 100% ;
+    height: 480px;
+}
+#Recomendados h1{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    margin-left: 50px;
+    padding-top: 30px; 
+}
+.Carrusel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Image_recomend{
+    width: 220px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.Carrusel::-webkit-scrollbar{
+    display: none;
+}
+.Imagen p{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:medium;
+    color:white;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+.Imagen h5{
+    background-color: rgba(255, 255, 255, 0.426);
+    width: 25px;
+    height: 20px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    padding-left: 5px;
+    padding-top: 10px;
+    border-radius: 20px;
+    position: relative;
+    top: -290px;
+    left: 190px;
+}
+.Tamaño{
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+}
+.Información{
+    display: flex;
+}
+.Imagen h4{
+    background-color: rgba(255, 255, 255, 0.426);
+    width: 50px;
+    height: 20px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:x-small;
+    color:white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    top: -70px;
+    left: 40px;
+}
+#Play_Icon{
+    width: 15px ;
+    height: 15px;
+    margin-right: 5px;
+    margin-left: 3px;
+    margin-top: -3px;
+}
+#Trending{
+    background-color:rgb(23, 23, 23);
+    width: 100% ;
+    height: 480px;
+}
+#Trending h1{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    margin-left: 50px;
+    padding-top: 50px; 
+}
