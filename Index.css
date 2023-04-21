@@ -72,7 +72,7 @@ nav{
     width: 480px;
     height: 200px;
     margin-left: 50px;
-    margin-top: 380px;
+    margin-top: 300px;
 }
 #Texto h1{
     font-family: 'Acme', sans-serif;
@@ -84,7 +84,7 @@ nav{
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     margin-top: -23px;
-    margin-left: 120px;
+    margin-left: 300px;
 }
 #Texto p{
     font-family: 'Acme', sans-serif;
