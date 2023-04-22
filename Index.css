@@ -210,6 +210,21 @@ nav{
     height: 20px;
     margin-left: 7px;
 }
+.Star{
+    display: flex;
+}
+.Stars {
+    background-image: url(baseline_star_white_48dp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2vh;
+    margin-left: 7px;
+}
+.Stars_no {
+    background-image: url(baseline_star_outline_white_48dp.png);
+    height: 20px;
+    margin-left: 7px;
+}
 .Información{
     display: flex;
     margin-top: -30px;
