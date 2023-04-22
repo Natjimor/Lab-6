@@ -13,19 +13,19 @@ class Movie {
     toRecomended(id) {
         return `
         <div class="Imagen" onclick="selectedMovie(${id})">
-                <img class="Image_recomend" src="${this.imagen_L}" alt="">
-                <h5>${this.clasification}</h5>
-                <h4><img id="Play_Icon" src="baseline_play_arrow_white_48dp.png" alt="Play">Play</h4>
-                <div class="Información">
-                    <p>Ratings: </p>
-                    <img class="Tamaño" src="yellow_fill_star.png" alt="Estrella">
-                    <img class="Tamaño" src="yellow_fill_star.png" alt="Estrella">
-                    <img class="Tamaño" src="yellow_fill_star.png" alt="Estrella">
-                    <img class="Tamaño" src="yellow_fill_star.png" alt="Estrella">
-                    <img class="Tamaño" src="yellow_outline_star.png" alt="Estrella vacía">
-                    <img class="Tamaño" src="baseline_bookmark_border_white_48dp.png" alt="Guardar">
-                </div>
+            <img class="Image_recomend" src="${this.imagen_L}" alt="">
+            <h5>${this.clasification}</h5>
+            <h4><img id="Play_Icon" src="baseline_play_arrow_white_48dp.png" alt="Play">Play</h4>
+            <div class="Información">
+                <p>Ratings: </p>
+                <img class="Tamaño" src="yellow_fill_star.png" alt="Estrella">
+                <img class="Tamaño" src="yellow_fill_star.png" alt="Estrella">
+                <img class="Tamaño" src="yellow_fill_star.png" alt="Estrella">
+                <img class="Tamaño" src="yellow_fill_star.png" alt="Estrella">
+                <img class="Tamaño" src="yellow_outline_star.png" alt="Estrella vacía">
+                <img class="Tamaño" src="baseline_bookmark_border_white_48dp.png" alt="Guardar">
             </div>
+        </div>
         `
     }
 
@@ -66,26 +66,26 @@ class Movie2 {
         `
     }
     toBanner2(id) {
-        const Nombre = document.getElementById("Título")
-        Nombre.innerHTML = this.name
+        const Nombre2 = document.getElementById("Título")
+        Nombre2.innerHTML = this.name
 
-        const Rating = document.getElementById("Rating")
-        Rating.innerHTML = this.rating
+        const Rating2 = document.getElementById("Rating")
+        Rating2.innerHTML = this.rating
         
-        const Description = document.getElementById("Sinopsis")
-        Description.innerHTML = this.description
+        const Description2 = document.getElementById("Sinopsis")
+        Description2.innerHTML = this.description
 
-        const Clasification = document.getElementById("Edad")
-        Clasification.innerHTML = `${this.clasification}`
+        const Clasification2 = document.getElementById("Edad")
+        Clasification2.innerHTML = `${this.clasification}`
 
         Barra_navegación.style.backgroundImage = `url(${this.imagen_f})`
     }
 }
 
-var movie1 = new Movie("Stranger Things","(8.7 ratings)","La historia se retoma seis meses después de la batalla en el centro comercial Starcourt, que trajo terror y destrucción a Hawkins. Luchando contra las secuelas, nuestro grupo de amigos está separado por primera vez y tiene que afrontar las complejidades del instituto, lo que no les pone las cosas nada fáciles. En este momento, el más vulnerable de todos, surge una nueva y terrorífica amenaza sobrenatural que representa un nuevo y horrible misterio que, si consiguen resolver, podría poner fin a los horrores del Upside Down.","https://larepublica.cronosmedia.glr.pe/migration/images/OSBPF6QO4BGBXIT6XCVTDFPRBQ.jpg","https://es.web.img3.acsta.net/pictures/22/05/14/13/26/5638861.jpg","+14",4,1)
+var movie1 = new Movie("Stranger Things","(8.7 ratings)","La historia se retoma seis meses después de la batalla en el centro comercial Starcourt, que trajo terror y destrucción a Hawkins. Luchando contra las secuelas, nuestro grupo de amigos está separado por primera vez y tiene que afrontar las complejidades del instituto, lo que no les pone las cosas nada fáciles. En este momento, el más vulnerable de todos, surge una nueva y terrorífica amenaza sobrenatural que representa un nuevo y horrible misterio que, si consiguen resolver, podría poner fin a los horrores del Upside Down.","https://media.es.wired.com/photos/64381a4e0a1c25ac00cad6ec/16:9/w_2560%2Cc_limit/stranger%2520thing%2520serie%2520animada%2520de%2520television.jpg","https://es.web.img3.acsta.net/pictures/22/05/14/13/26/5638861.jpg","+14",4,1)
 var movie2 = new Movie("You","(7.7 ratings)","Joe Goldberg es un joven brillante, pero que tiene todo el perfil de un psicópata acosador y obsesivo. Es un personaje oscuro con un enorme carisma, un ser que tiene una visión bastante retorcida del amor. Su personalidad, carácter y encanto lo llevarán a “enamorarse” de forma enfermiza, siendo capaz de llegar a cometer actos atroces y crueles.","https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEii7HyijPLSUMMEHXYkmInuSQKco9fsYrZbkywABGRLChqcp-K_rjbUXwBtmpxkt5StcSgGFJb_MVMC28tdTyq9UDoukGfCCGoZ5AKZXvh6dO1Y1PukwoXibY2MlrJiL0De-al-eW4q-ZhhB6mtV_92ycSWUommmbARC6jW7c_3mVzoHOpfZsaR8Boo/s2000/you.png","https://resizing.flixster.com/FJuMwZpay5FUwItDiuY88DCpyqA=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNGNmOGM4ZmUtZmI5My00ZDU2LTk4MzAtZGFiMDQ2YTc2N2EwLmpwZw==","+16",3,2)
 var movie3 = new Movie("Anne with an E","(8.7 ratings)","Anne Shirley es una niña huérfana que vive en un pequeño pueblo llamado Avonlea que pertenece a la Isla del Príncipe Eduardo, en el año 1890. Después de una infancia difícil, donde fue pasando de orfanato a hogares de acogida, es enviada por error a vivir con una solterona y su hermano. Cuando cumple 13 años, Anne va a conseguir transformar su vida y el pequeño pueblo donde vive gracias a su fuerte personalidad, intelecto e imaginación.","https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/04/anee.jpg","https://m.media-amazon.com/images/M/MV5BNThmMzJlNzgtYmY5ZC00MDllLThmZTMtNTRiMjQwNmY0NmRhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg","+12",4,1) 
-var movie4 = new Movie("Emily in Paris","(6.9 ratings)","Emily Cooper es una joven estadounidense que está en plena fase de crecimiento profesional. Precisamente, su vida cambia cuando recibe la oportunidad laboral inesperada que la lleva a mudarse a París, Francia. En su nuevo hogar, se encargará de comunicar el punto de vista estadounidense a una conocida compañía de marketing francesa. Será un choque brutal de culturas, un desafío laboral que va acompañado de forma paralela con su proceso de adaptación a un nuevo país, el surgimiento de nuevas amistades y una vida amorosa que se torna más compleja.","Emily Cooper es una joven estadounidense que está en plena fase de crecimiento profesional. Precisamente, su vida cambia cuando recibe la oportunidad laboral inesperada que la lleva a mudarse a París, Francia. En su nuevo hogar, se encargará de comunicar el punto de vista estadounidense a una conocida compañía de marketing francesa. Será un choque brutal de culturas, un desafío laboral que va acompañado de forma paralela con su proceso de adaptación a un nuevo país, el surgimiento de nuevas amistades y una vida amorosa que se torna más compleja.","https://flxt.tmsimg.com/assets/p18761121_b_v13_ao.jpg","+16",4,1)
+var movie4 = new Movie("Emily in Paris","(6.9 ratings)","Emily Cooper es una joven estadounidense que está en plena fase de crecimiento profesional. Precisamente, su vida cambia cuando recibe la oportunidad laboral inesperada que la lleva a mudarse a París, Francia. En su nuevo hogar, se encargará de comunicar el punto de vista estadounidense a una conocida compañía de marketing francesa. Será un choque brutal de culturas, un desafío laboral que va acompañado de forma paralela con su proceso de adaptación a un nuevo país, el surgimiento de nuevas amistades y una vida amorosa que se torna más compleja.","https://movieplayer.net-cdn.it/t/images/2022/12/21/emily-in-paris-3-recensione-serie-tv-netflix_jpg_1280x720_crop_q85.jpg","https://flxt.tmsimg.com/assets/p18761121_b_v13_ao.jpg","+16",4,1)
 var movie5 = new Movie("Wednesday","(8.1 ratings)","Miércoles Addams, hija de de Morticia (Catherine Zeta-Jones) y Gomez (Luis Guzmán) que posee poderes psíquicos, acude a la Academia Nevermore, instituto para inadaptados, tras intentar matar a los acosadores de su hermano en el anterior centro educativo. Al mismo tiempo se involucra en la resolución de misterios familiares y la resolución de unos asesinatos que están aterrorizando el lugar.","https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/09/wednesday-netflix-estreno.jpg?fit=1280%2C720&quality=80&ssl=1","https://m.media-amazon.com/images/M/MV5BM2ZmMjEyZmYtOGM4YS00YTNhLWE3ZDMtNzQxM2RhNjBlODIyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg","+14",5,0)
 var movie6 = new Movie("Friends","(8.9 ratings)","Friends narra las aventuras y desventuras de seis jóvenes de Nueva York. Rachel, Monica, Phoebe, Ross, Chandler y Joey forman una unida pandilla de amigos que viven en Manhattan y que suelen reunirse en sus apartamentos o en su bar habitual, el Central Perk. A pesar de los numerosos cambios que se producen en sus vidas, su amistad es inquebrantable en la dura batalla por salir adelante en sus periplos profesionales y personales.","https://hbomax-images.warnermediacdn.com/images/GXdbR_gOXWJuAuwEAACVH/tileburnedin?size=1280x720&partner=hbomaxcom&v=6a409f09891f75549fdb8d07dc969b63&host=art-gallery.api.hbo.com&language=es-419&w=1280","https://de.web.img2.acsta.net/pictures/21/05/14/08/25/4008276.jpg","+13",3,2)
 var movie7 = new Movie("The big bang theory","(8.2 ratings)","Leonard Hofstadter (Johnny Galecki) y Sheldon Cooper (Jim Parsons) son dos físicos del Instituto de Tecnología de California, en donde trabajan también Howard (Simon Helberg), ingeniero mecánico, y el indio Raj (Kunal Nayyar), astrofísico. Todos ellos son científicos muy brillantes pero totalmente negados para las relaciones sociales, en especial para ligar con mujeres. Leonard se enamora de su vecina, Penny (Kaley Cuoco), una guapa aspirante a actriz muy distinta a su modo de vida científico y friki.","https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/08/Big-Bang-Theory-1.jpg?fit=1920%2C1080&quality=50&strip=all&ssl=1","https://flxt.tmsimg.com/assets/p185554_b_v9_bk.jpg","+13",4,1)
@@ -113,9 +113,9 @@ function showRecomended() {
 
 function showTrend() {
     const contenedor2= document.getElementById("Carrusel2")
-    for(let i = 0; i < Trend.length; i++){
-        const movie = Trend[i]
-        contenedor2.innerHTML += movie.toTrend()
+    for(let j = 0; j < Trend.length; j++){
+        const movie = Trend[j]
+        contenedor2.innerHTML += movie.toTrend(j)
     }
 }
 
@@ -125,12 +125,9 @@ function selectedMovie(id) {
 }
 
 function selectedMovie2(id) {
-    var movie = Trend[id]
-    movie.toBanner2()
+    var movie2 = Trend[id]
+    movie2.toBanner2()
 }
 
 showRecomended()
 showTrend()
-
-
-//id_div.style.backgroundImage = `url(${url})`

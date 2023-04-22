@@ -17,7 +17,7 @@ header{
 }
 #Barra_navegación{
     background-image: url("https://hbomax-images.warnermediacdn.com/images/GXdbR_gOXWJuAuwEAACVH/tileburnedin?size=1280x720&partner=hbomaxcom&v=6a409f09891f75549fdb8d07dc969b63&host=art-gallery.api.hbo.com&language=es-419&w=1280");
-    background-position:bottom;
+    background-position:center;
     width: 100%;
     height:630px ;
     background-size: cover;
@@ -72,7 +72,7 @@ nav{
     width: 480px;
     height: 200px;
     margin-left: 50px;
-    margin-top: 300px;
+    margin-top: 320px;
 }
 #Texto h1{
     font-family: 'Acme', sans-serif;
@@ -83,8 +83,6 @@ nav{
     font-family: 'Acme', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    margin-top: -23px;
-    margin-left: 300px;
 }
 #Texto p{
     font-family: 'Acme', sans-serif;
@@ -160,7 +158,7 @@ nav{
     font-family: 'Josefin Sans', sans-serif;
     color:white;
     margin-left: 50px;
-    padding-top: 30px; 
+    padding-top: 70px; 
 }
 .Carrusel{
     display: flex;
@@ -176,7 +174,11 @@ nav{
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
+}
+.Image_recomend:hover{
+    width: 235px;
+    height: 315px;
 }
 .Carrusel::-webkit-scrollbar{
     display: none;
@@ -210,6 +212,7 @@ nav{
 }
 .Información{
     display: flex;
+    margin-top: -30px;
 }
 .Imagen h4{
     background-color: rgba(255, 255, 255, 0.426);
@@ -244,5 +247,5 @@ nav{
     font-family: 'Josefin Sans', sans-serif;
     color:white;
     margin-left: 50px;
-    padding-top: 50px; 
+    padding-top: 40px;
 }
