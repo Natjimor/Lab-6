@@ -47,38 +47,38 @@ class Movie {
 }
 
 class Movie2 {
-    constructor (name, rating, description, imagen_f, imagen_L, clasification) {
-        this.name = name
-        this.rating = rating
-        this.description = description
-        this.imagen_f = imagen_f
-        this.imagen_L = imagen_L
-        this.clasification = clasification
+    constructor (name2, rating2, description2, imagen_f2, imagen_L2, clasification2) {
+        this.name2 = name2
+        this.rating2 = rating2
+        this.description2 = description2
+        this.imagen_f2 = imagen_f2
+        this.imagen_L2 = imagen_L2
+        this.clasification2 = clasification2
     }
 
-    toTrend() {
+    toTrend(_id) {
         return `
-        <div class="Imagen">
-            <img class="Image_recomend" src="${this.imagen_L}" alt="">
-            <h5>${this.clasification}</h5>
+        <div class="Imagen" onclick="selectedMovie(${_id})">
+            <img class="Image_recomend" src="${this.imagen_L2}" alt="">
+            <h5>${this.clasification2}</h5>
             <h4><img id="Play_Icon" src="baseline_play_arrow_white_48dp.png" alt="Play">Play</h4>
         </div>
         `
     }
-    toBanner2(id) {
+    toBanner2(_id) {
         const Nombre2 = document.getElementById("Título")
-        Nombre2.innerHTML = this.name
+        Nombre2.innerHTML = this.name2
 
         const Rating2 = document.getElementById("Rating")
-        Rating2.innerHTML = this.rating
+        Rating2.innerHTML = this.rating2
         
         const Description2 = document.getElementById("Sinopsis")
-        Description2.innerHTML = this.description
+        Description2.innerHTML = this.description2
 
         const Clasification2 = document.getElementById("Edad")
-        Clasification2.innerHTML = `${this.clasification}`
+        Clasification2.innerHTML = `${this.clasification2}`
 
-        Barra_navegación.style.backgroundImage = `url(${this.imagen_f})`
+        Barra_navegación.style.backgroundImage = `url(${this.imagen_f2})`
     }
 }
 
@@ -114,8 +114,8 @@ function showRecomended() {
 function showTrend() {
     const contenedor2= document.getElementById("Carrusel2")
     for(let j = 0; j < Trend.length; j++){
-        const movie = Trend[j]
-        contenedor2.innerHTML += movie.toTrend(j)
+        const movie2 = Trend[j]
+        contenedor2.innerHTML += movie2.toTrend(j)
     }
 }
 
@@ -124,8 +124,8 @@ function selectedMovie(id) {
     movie.toBanner()
 }
 
-function selectedMovie2(id) {
-    var movie2 = Trend[id]
+function selectedMovie2(_id) {
+    var movie2 = Trend[_id]
     movie2.toBanner2()
 }
 
